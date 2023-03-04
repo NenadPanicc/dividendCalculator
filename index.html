@@ -31,20 +31,36 @@
         </div>
         <div class="hero" id="form">
             <p>The US witholding tax of 15% is pre-calculated. <br>The calculation can be done either for a monthly or yearly basis.</p>
-            <input  class="formStyle" type="number" onchange='calculate()' placeholder='Dividend yield' id="yield">
-            <input  class="formStyle" type="number" onchange='calculate()' placeholder="Monthly invested amount" id="amount">
-            <input  class="formStyle" type"number" onchange='calculate()' placeholder="Number of years" id="years">
-            <input  class="formStyle" type"number" onchange='calculate()' placeholder="Number of months" id="months">
-            <button class="formStyle" onclick="calculate()">Calculate</button>
-            <div class="results">
-                <p>Monthly income</p>
-                <p id="rezultat"></p>
-                <p>Total amount of dividents earned</p>
-                <p id="ukupno"></p>
-                <p>Invested amount</p>
-                <p id="fondSize"></p>
+                <div>
+                    <div id="inputs">
+                        <input  class="formStyle" type="number" onchange='calculate()' placeholder='Capital appreciation' id="appreciation">
+                        <input  class="formStyle" type="number" onchange='calculate()' placeholder='Dividend yield' id="yield">
+                        <input  class="formStyle" type="number" onchange='calculate()' placeholder="Monthly invested amount" id="amount">             
+                        <input  class="formStyle" type"number" onchange='calculate()' placeholder="Number of years" id="years">
+                        <input  class="formStyle" type"number" onchange='calculate()' placeholder="Number of months" id="months">
+                        <div style="display:inline-flex">
+                            <p style="margin-right: 5px;">Year</p>
+                            <label class="switch">
+                                <input type="checkbox" id="toggle" onchange="toggleSwitch()">
+                                <span class="slider"></span>
+                              </label>
+                            <p style="margin-left: 5px;">Month</p>
+                        </div>
+                        <button class="formStyle" onclick="calculate()">Calculate</button>
+                    </div>
+            </div>
+            <div>
+                <div class="results">
+                    <p>Monthly income</p>
+                    <p id="rezultat"></p>
+                    <p>Total amount of dividents earned</p>
+                    <p id="ukupno"></p>
+                    <p>Invested amount</p>
+                    <p id="fondSize"></p>
+                </div>
             </div>
         </div>
+        
 	</section>
    <section id="about">
   <div class="container">
@@ -57,15 +73,5 @@
 </body>
 <script src="script.js" type="text/javascript"></script>
 <script type='text/javascript' src='//pl18668785.highrevenuegate.com/71/70/c1/7170c17836391dbf7e17294462d38deb.js'></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '2540a60fede320e1ae183da5d5e987dd',
-		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2540a60fede320e1ae183da5d5e987dd/invoke.js"></scr' + 'ipt>');
-</script>
 <script type='text/javascript' src='//pl18669644.highrevenuegate.com/52/3e/dd/523edd58858c5bd675881bda54ad1d13.js'></script>
 </html>
