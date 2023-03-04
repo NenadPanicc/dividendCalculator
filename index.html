@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title>Dividend calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Link to your CSS file -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+		<!-- Logo and navigation menu -->
+		<div class="logo">
+			<span class="logo" style="display: inline;">
+                <img src="tear.png" alt="Logo">
+                <h2 style="display: inline;">The dividend</h2>
+              </span>              
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+    <section class="hero">
+		<!-- Headline and call-to-action button -->
+        <div style="text-align:center" id="welcome">
+            <h1>Welcome to the monthly Dividend Calculator!</h1>
+            <button id="getStarted">Get Started</button>
+        </div>
+        <div class="hero" id="form">
+            <p>The US witholding tax of 15% is pre-calculated. <br>The calculation can be done either for a monthly or yearly basis.</p>
+            <input  class="formStyle" type="number" onchange='calculate()' placeholder='Dividend yield' id="yield">
+            <input  class="formStyle" type="number" onchange='calculate()' placeholder="Monthly invested amount" id="amount">
+            <input  class="formStyle" type"number" onchange='calculate()' placeholder="Number of years" id="years">
+            <input  class="formStyle" type"number" onchange='calculate()' placeholder="Number of months" id="months">
+            <button class="formStyle" onclick="calculate()">Calculate</button>
+            <div class="results">
+                <p>Monthly income</p>
+                <p id="rezultat"></p>
+                <p>Total amount of dividents earned</p>
+                <p id="ukupno"></p>
+                <p>Invested amount</p>
+                <p id="fondSize"></p>
+            </div>
+        </div>
+	</section>
+   <section id="about">
+  <div class="container">
+    <h2>About Us</h2>
+        <p>This calculation is based on "Dollar Cost Avergaing" investment (monthly investments of the same amount). It's sole purpose is to calculate only the dividend return based on the number of months or years invested, and shows what the monthly income will be after a certain period of time.</p>
+        <p>The US witholding tax of 15% is pre-calculated. The calculation can be done either for a monthly or yearly basis.</p>
+     </div>
+</section>
+
+</body>
+<script src="/script.js"></script>
+</html>
